@@ -123,6 +123,34 @@
     width: 60px;
     height: 20px;
 }
+.ex-12-button:hover .ex-12-top-white {
+    animation: move_top_white 1s linear infinite;
+}
+@keyframes move_top_white {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 80px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move_bottom_white 1s linear infinite;
+}
+@keyframes move_bottom_white {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 80px);
+    }
+    100% {
+        right: 20%;
+    }
+}
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
